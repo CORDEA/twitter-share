@@ -30,7 +30,9 @@ module.exports = {
         descriptionFiles: ['package.json']
     },
     node: {
-        fs: 'empty'
+        fs: 'empty',
+        net: 'empty',
+        tls: 'empty'
     },
     plugins: [
         new webpack.EnvironmentPlugin(['CONSUMER_KEY', 'CONSUMER_SECRET', 'ACCESS_TOKEN', 'ACCESS_TOKEN_SECRET'])
