@@ -42,7 +42,11 @@ new Vue({
     },
     methods: {
         click: function() {
-            console.log(data.text);
+            client.post('statuses/update', {status: data.text}, function(error, tweet, response) {
+                if (error) {
+                    // handle
+                }
+            });
         }
     }
 })
