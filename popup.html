@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
         <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-        <script defer src="./dist/main.js"></script>
+        <script defer src="./dist/main.js" charset="utf-8"></script>
     </head>
 
     <body>
@@ -21,7 +21,7 @@
             <div class="mdc-layout-grid mdc-layout-grid--align-right grid">
                 <div class="mdc-layout-grid__inner">
                     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-right">
-                        <button class="mdc-button mdc-button--raised">
+                        <button class="mdc-button mdc-button--raised" v-on:click="click()">
                             <div class="mdc-button__ripple"></div>
                             <span class="mdc-button__label">Share</span>
                         </button>

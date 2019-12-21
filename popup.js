@@ -39,5 +39,10 @@ new Vue({
                 data.text = "👀\n" + tab.title + "\n" + tab.url;
             }
         });
+    },
+    methods: {
+        click: function() {
+            console.log(data.text);
+        }
     }
 })
