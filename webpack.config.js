@@ -31,5 +31,8 @@ module.exports = {
     },
     node: {
         fs: 'empty'
-    }
+    },
+    plugins: [
+        new webpack.EnvironmentPlugin(['CONSUMER_KEY', 'CONSUMER_SECRET', 'ACCESS_TOKEN', 'ACCESS_TOKEN_SECRET'])
+    ]
 }
