@@ -1,0 +1,13 @@
+#app {
+    width: 450px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.form {
+    margin-bottom: 0px;
+}
+
+.grid {
+    max-width: 100px;
+}

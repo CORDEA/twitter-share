@@ -2,9 +2,31 @@
     <head>
         <title>Share</title>
         <link rel="stylesheet" href="./popup.css" />
+        <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <script defer src="./popup.js"></script>
     </head>
-    <body>
-        <script src="./popup.js"></script>
-    </body>
 
+    <body>
+        <div id="app">
+            <div class="mdc-text-field mdc-text-field--fullwidth mdc-text-field--textarea mdc-text-field--no-label">
+                <textarea id="textarea" class="mdc-text-field__input" rows="3"></textarea>
+                <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                </div>
+            </div>
+            <div class="mdc-layout-grid mdc-layout-grid--align-right grid">
+                <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-right">
+                        <button class="mdc-button mdc-button--raised">
+                            <div class="mdc-button__ripple"></div>
+                            <span class="mdc-button__label">Share</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
