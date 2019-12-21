@@ -36,7 +36,7 @@ new Vue({
         chrome.tabs.query({currentWindow: true, active: true}, function(tabs) {
             if (tabs.length > 0) {
                 const tab = tabs[0];
-                data.text = tab.title + "\n" + tab.url;
+                data.text = "👀\n" + tab.title + "\n" + tab.url;
             }
         });
     }
