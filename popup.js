@@ -26,6 +26,7 @@ const client = new Twitter({
 })
 
 const data = {
+    loading: false,
     text: ""
 }
 
@@ -42,10 +43,14 @@ new Vue({
     },
     methods: {
         click: function() {
+            data.loading = true;
             client.post('statuses/update', {status: data.text}, function(error, tweet, response) {
+                data.loading = false;
                 if (error) {
                     // handle
+                    return;
                 }
+                data.text = "";
             });
         }
     }
