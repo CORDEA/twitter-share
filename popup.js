@@ -16,4 +16,19 @@
  * date  : 2019-12-21
  */
 
+const data = {
+    text: ""
+}
 
+new Vue({
+    el: '#app',
+    data: data,
+    created: function() {
+        chrome.tabs.query({currentWindow: true, active: true}, function(tabs) {
+            if (tabs.length > 0) {
+                const tab = tabs[0];
+                data.text = tab.title + "\n" + tab.url;
+            }
+        });
+    }
+})
